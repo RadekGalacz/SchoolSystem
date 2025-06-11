@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">🛡️ Roles</h2>
+        <a asp-action="Create" class="btn btn-success">➕ Create Role</a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle shadow-sm">
+                <thead class="table-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th style="width: 100px;">Update</th>
+                        <th style="width: 100px;">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var role in Model)
+                    {
+                        <tr>
+                            <td>@role.Name</td>
+                            <td>@role.Id</td>
+                            <td>
+                                <a class="btn btn-sm btn-warning w-100" asp-action="Edit" asp-route-id="@role.Id">Edit</a>
+                            </td>
+                            <td>
+                            <a asp-action="GetToDelete" asp-route-id="@role.Id" class="btn btn-sm btn-danger w-100">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">No roles found.</div>
+    }
+</div>

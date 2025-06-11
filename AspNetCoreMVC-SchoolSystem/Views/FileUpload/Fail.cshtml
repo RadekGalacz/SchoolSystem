@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "File Upload Error";
+}
+
+<div class="container mt-5">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title text-danger mb-3">⚠️ No file selected</h3>
+
+            <div class="mb-4">
+                <p class="fw-bold">You must select a file before uploading.</p>
+                <p>Please go back and choose an XML file to upload.</p>
+            </div>
+
+            <div class="d-flex gap-3">
+                <a asp-controller="Students" asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i> Back
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

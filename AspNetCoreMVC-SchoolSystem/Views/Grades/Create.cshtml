@@ -1,0 +1,26 @@
+﻿@model GradeDTO
+
+<div>
+    <form asp-action="Create">
+        <h4>Create a new grade</h4>
+        <div>
+            <label asp-for="StudentId" class="control-label"></label>
+            <select asp-for="StudentId" class="form-control" asp-items="ViewBag.Students"></select>
+        </div>
+        <div>
+            <label asp-for="SubjectId" class="control-label"></label>
+            <select asp-for="SubjectId" class="form-control" asp-items="ViewBag.Subjects"></select>
+        </div>
+        <div>
+            <label asp-for="Topic" ></label>
+            <input asp-for="Topic" type="text" placeholder="What was examined" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Mark"></label>
+            <input asp-for="Mark" type="number" min="1" max="5" placeholder="Mark" class="form-control" />
+        </div>
+        <div>
+            <input class="btn btn-success" type="submit" value="Create" />
+        </div>
+    </form>
+</div> 

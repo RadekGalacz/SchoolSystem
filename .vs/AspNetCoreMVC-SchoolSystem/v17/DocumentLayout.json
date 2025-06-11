@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|c:\\users\\rgala\\source\\repos\\aspnetcoremvc-schoolsystem\\aspnetcoremvc-schoolsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|solutionrelative:aspnetcoremvc-schoolsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|c:\\users\\rgala\\source\\repos\\aspnetcoremvc-schoolsystem\\aspnetcoremvc-schoolsystem\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|solutionrelative:aspnetcoremvc-schoolsystem\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|c:\\users\\rgala\\source\\repos\\aspnetcoremvc-schoolsystem\\aspnetcoremvc-schoolsystem\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C2F447-0C05-4EBB-8D55-F8CEE71B91F8}|AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem.csproj|solutionrelative:aspnetcoremvc-schoolsystem\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 714,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "AspNetCoreMVC-SchoolSystem\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "AspNetCoreMVC-SchoolSystem\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T19:21:50.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "AspNetCoreMVC-SchoolSystem\\Controllers\\HealthController.cs",
+              "ToolTip": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "AspNetCoreMVC-SchoolSystem\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:14:23.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "AspNetCoreMVC-SchoolSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\rgala\\source\\repos\\AspNetCoreMVC-SchoolSystem\\AspNetCoreMVC-SchoolSystem\\appsettings.json",
+              "RelativeToolTip": "AspNetCoreMVC-SchoolSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T20:10:39.188Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 189,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

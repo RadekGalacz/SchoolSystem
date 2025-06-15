@@ -1,0 +1,30 @@
+﻿@using AspNetCoreMVC_SchoolSystem.ViewModels
+@model UserViewModel
+
+<div class="container mt-5">
+    <h1 class="mb-4">Vytvořit uživatele</h1>
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+        </div>
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Vytvořit</button>
+            <a asp-action="Index" class="btn btn-secondary">← Zpět</a>
+        </div>
+    </form>
+</div>

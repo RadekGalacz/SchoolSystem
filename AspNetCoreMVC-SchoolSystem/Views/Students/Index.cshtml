@@ -1,0 +1,81 @@
+﻿@using AspNetCoreMVC_SchoolSystem.DTO
+@model IEnumerable<StudentDTO>
+
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">🎓 Studenti</h2>
+        <a asp-action="Create" class="btn btn-success">➕ Přidat studenta</a>
+    </div>
+
+    @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))) {
+        <div class="card shadow-sm mb-4 border-0">
+            <div class="card-body">
+                <h5 class="card-title mb-3">📤 Nahrát .xml soubor studentů</h5>
+                <form method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Upload" class="row g-3 align-items-center">
+                    <div class="col-md-6">
+                        <input type="file" name="file" class="form-control" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-upload me-1"></i> Nahrát
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+
+    <div class="card shadow-sm mb-4 border-0">
+        <div class="card-body">
+            <h5 class="card-title mb-3">🔍 Najdi studenta</h5>
+            <form method="get" asp-action="Search" class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <input list="search-students" type="search" id="site-search" name="q" class="form-control" placeholder="Zadej jméno studenta..." />
+                    <datalist id="search-students">
+                        @foreach (var student in Model)
+                        {
+                            <option value="@student.LastName, @student.FirstName"></option>
+                        }
+                    </datalist>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-primary">
+                        <i class="bi bi-search me-1"></i> Hledat
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.FirstName @item.LastName</h5>
+                            <hr />
+                            <p class="card-text"><strong>ID:</strong> @item.Id</p>
+                            <p class="card-text"><strong>Datum narození:</strong> @item.DateOfBirth.ToString("dd.MM.yyyy")</p>
+                        </div>
+                                                @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher"))){
+                        
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-end gap-2">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Změnit</a>
+                            <a asp-action="GetToDelete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Smazat</a>
+                                
+                        </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">Nebyl nalezen žádný student</div>
+    }
+</div>

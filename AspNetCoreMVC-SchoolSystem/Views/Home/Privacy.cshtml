@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Přihlašovací údaje";
+}
+
+<style>
+    .privacy-container {
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+        .privacy-container h1 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #0d6efd;
+            text-align: center;
+        }
+
+    .login-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .login-list li {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+
+        .login-list strong {
+            color: #198754;
+        }
+</style>
+
+<div class="privacy-container">
+    <h1>@ViewData["Title"]</h1>
+    <ul class="login-list">
+        <li>
+            <strong>Admin</strong><br />
+            Uživatel: <code>Admin</code><br />
+            Heslo: <code>Abcd1234.</code>
+        </li>
+        <li>
+            <strong>Student</strong><br />
+            Uživatel: <code>franta</code><br />
+            Heslo: <code>Abcd1234.</code>
+        </li>
+        <li>
+            <strong>Učitel</strong><br />
+            Uživatel: <code>Matikar</code><br />
+            Heslo: <code>Abcd1234.</code>
+        </li>
+    </ul>
+
+    <div class="text-center mt-4">
+        <a href="https://schoolmvcapp.runasp.net/Account/Login?ReturnUrl=%2F" class="btn btn-primary px-4 py-2">
+            Přihlásit
+        </a>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+
+@{
+    var protectedRoles = ViewBag.ProtectedRoleNames as List<string> ?? new List<string>();
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">🛡️ Role</h2>
+        <a asp-action="Create" class="btn btn-success">➕ Vytvořit roli</a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle shadow-sm">
+                <thead class="table-light">
+                    <tr>
+                        <th>Jméno</th>
+                        <th>ID</th>
+                        <th style="width: 100px;">Úprava</th>
+                        <th style="width: 100px;">Smazání</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var role in Model)
+                    {
+                        <tr>
+                            <td>
+                                @role.Name
+                                @if (protectedRoles.Contains(role.Name))
+                                {
+                                    <span class="badge bg-secondary ms-2">chráněno</span>
+                                }
+                            </td>
+                            <td>@role.Id</td>
+                            <td>
+                                @if (!protectedRoles.Contains(role.Name))
+                                {
+                                    <a asp-action="Edit" asp-route-id="@role.Id" class="btn btn-sm btn-warning w-100">Změnit</a>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-sm btn-outline-secondary w-100" disabled>Nelze</button>
+                                }
+                            </td>
+                            <td>
+                                @if (!protectedRoles.Contains(role.Name))
+                                {
+                                    <a asp-action="GetToDelete" asp-route-id="@role.Id" class="btn btn-sm btn-danger w-100">Smazat</a>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-sm btn-outline-secondary w-100" disabled>Nelze</button>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">Žádná role nenalezena.</div>
+    }
+</div>

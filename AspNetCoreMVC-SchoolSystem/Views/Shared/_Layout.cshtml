@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SchoolSystem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AspNetCoreMVC_SchoolSystem.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+        }
+
+        .nav-link {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 0.375rem;
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.35);
+            border-radius: 0.375rem;
+            font-weight: 600;
+            color: #212529 !important;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+        }
+
+        .btn-logout {
+            border-radius: 20px;
+            padding: 6px 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-4" asp-controller="Home" asp-action="Index">🎓 SchoolSystem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">Manuál</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["action"]?.ToString() == "Privacy" ? "active" : "")"
+                               asp-controller="Home" asp-action="Privacy">Podmínky použití</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Students" ? "active" : "")"
+                               asp-controller="Students" asp-action="Index">Studenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Subject" ? "active" : "")"
+                               asp-controller="Subject" asp-action="Index">Předměty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Grades" ? "active" : "")"
+                               asp-controller="Grades" asp-action="Index">Známky</a>
+                        </li>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                                                    <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Users" ? "active" : "")"
+                               asp-controller="Users" asp-action="Index">Uživatelé</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-3 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Roles" ? "active" : "")"
+                               asp-controller="Roles" asp-action="Index">Role</a>
+                        </li>
+                        }
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        @if (User?.Identity?.IsAuthenticated ?? false)
+                        {
+                            <li class="nav-item d-flex align-items-center">
+                                <span class="navbar-text text-white me-3">👤 @User.Identity.Name</span>
+                                <a class="btn btn-danger btn-sm btn-logout" asp-controller="Account" asp-action="Logout">Odhlásit</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="text-center text-muted border-top py-4 mt-5">
+        <div class="container">
+            <small>
+                &copy; 2025 - <strong>SchoolSystem</strong> |
+                <a class="text-muted text-decoration-none" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+            </small>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

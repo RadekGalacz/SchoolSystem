@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANd8kwUrAWUisXRO1Quig9AAAAAACAAAAAAAQZgAAAAEAACAAAAC/pKqfiylpeh08iUPJWFFa9wG1AnXSEjU0WE3RB+C+9wAAAAAOgAAAAAIAACAAAABsXF133GsWy+fzoq7heK8PysrqiIQq681SIIqscql7ZCAAAAArjwAUL5qyXa4qxP64y50fqjuMw2qfaXTHjs1d3eWavkAAAAD+7WEhw+pXmCtr79UIXjpMyPwwKysYJG27tvcZuKv/Lmwed8HilKU4FVGtBHl2n1KuSbgFgCAwqAQt/8XhlBl0</EncryptedPassword>
+    <History>True|2025-06-15T20:18:19.1448429Z||;True|2025-06-15T22:16:29.5923972+02:00||;True|2025-06-15T22:14:48.1720464+02:00||;True|2025-06-15T22:07:48.3553208+02:00||;True|2025-06-15T22:06:52.1337382+02:00||;True|2025-06-15T22:04:59.7495598+02:00||;True|2025-06-15T22:02:48.6691699+02:00||;True|2025-06-15T22:01:57.9719247+02:00||;True|2025-06-15T21:59:33.3684887+02:00||;True|2025-06-15T17:01:10.0634391+02:00||;True|2025-06-15T14:07:05.5961809+02:00||;True|2025-06-15T14:03:50.3578736+02:00||;True|2025-06-15T13:54:50.2178611+02:00||;True|2025-06-15T13:21:54.8774849+02:00||;True|2025-06-15T10:09:48.5135639+02:00||;True|2025-06-12T17:35:21.0037013+02:00||;True|2025-06-12T17:33:53.0184620+02:00||;True|2025-06-12T17:11:03.8711686+02:00||;True|2025-06-12T17:10:24.3553225+02:00||;True|2025-06-12T16:42:28.7437984+02:00||;True|2025-06-12T16:40:08.3955179+02:00||;True|2025-06-12T16:39:05.1201375+02:00||;True|2025-06-12T16:37:43.1771760+02:00||;True|2025-06-12T16:35:09.0515196+02:00||;True|2025-06-12T16:33:51.8781293+02:00||;True|2025-06-12T16:27:01.9517864+02:00||;True|2025-06-12T16:21:08.6324704+02:00||;True|2025-06-12T16:18:05.3789317+02:00||;True|2025-06-12T16:10:31.8958108+02:00||;True|2025-06-12T16:00:34.2005111+02:00||;True|2025-06-12T15:55:23.3151805+02:00||;True|2025-06-12T15:53:07.3286463+02:00||;True|2025-06-12T15:46:56.9003750+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="monsterdbconnection">
+      <Value>server=db21477.databaseasp.net%3bdatabase=db21477%3buser id=db21477%3bpassword={p!2d5ih#_7yt%3bencrypt=false%3bmultipleactiveresultsets=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

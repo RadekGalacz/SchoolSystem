@@ -1,0 +1,35 @@
+﻿@using AspNetCoreMVC_SchoolSystem.ViewModels
+@model LoginViewModel
+
+<div class="container mt-5" style="max-width: 500px;">
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-4 fw-bold">🔐 Login</h2>
+
+            <div class="text-danger mb-3" asp-validation-summary="All"></div>
+
+            <form asp-action="Login" method="post" novalidate>
+                <input type="hidden" asp-for="ReturnUrl" />
+
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label fw-semibold"></label>
+                    <input asp-for="UserName" class="form-control" placeholder="Zadejte uživatelské jméno" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label fw-semibold"></label>
+                    <input asp-for="Password" class="form-control" type="password" placeholder="Zadejte heslo" />
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" asp-for="Remember" type="checkbox" />
+                    <label class="form-check-label" asp-for="Remember">Zapamatovat</label>
+                </div>
+
+                <div class="d-grid">
+                    <button class="btn btn-primary" type="submit">Přihlásit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

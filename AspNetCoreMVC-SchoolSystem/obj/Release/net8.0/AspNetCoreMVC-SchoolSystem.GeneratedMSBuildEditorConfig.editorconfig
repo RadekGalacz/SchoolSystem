@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AspNetCoreMVC_SchoolSystem
+build_property.RootNamespace = AspNetCoreMVC_SchoolSystem
+build_property.ProjectDir = C:\Users\rgala\source\repos\AspNetCoreMVC-SchoolSystem\AspNetCoreMVC-SchoolSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rgala\source\repos\AspNetCoreMVC-SchoolSystem\AspNetCoreMVC-SchoolSystem
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/FileUpload/Fail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9hZFxGYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Grades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Grades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Grades/GetToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXEdldFRvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Grades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Roles/GetToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcR2V0VG9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Shared/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFjY2Vzc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Students/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Students/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Students/GetToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcR2V0VG9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Subject/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Subject/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Subject/GetToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxHZXRUb0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Subject/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Users/GetToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcR2V0VG9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rgala/source/repos/AspNetCoreMVC-SchoolSystem/AspNetCoreMVC-SchoolSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xqwyaz2sul

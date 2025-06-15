@@ -1,0 +1,45 @@
+﻿@model GradeDTO
+<style>
+    .form-card {
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    }
+
+    .form-title {
+        background: linear-gradient(90deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
+<div class="container mt-5">
+    <div class="form-card">
+        <div class="form-title">Editovat hodnocení</div>
+
+        <form asp-action="Edit">
+            <div class="mb-3">
+                <label asp-for="StudentId" class="form-label"></label>
+                <select asp-for="StudentId" class="form-control" asp-items="ViewBag.Students"></select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="SubjectId" class="form-label"></label>
+                <select asp-for="SubjectId" class="form-control" asp-items="ViewBag.Subjects"></select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Topic"></label>
+                <input asp-for="Topic" type="text" class="form-control" placeholder="Hodnocené téma" />
+            </div>
+            <div class="mb-4">
+                <label asp-for="Mark"></label>
+                <input asp-for="Mark" type="number" class="form-control" min="1" max="5" placeholder="Známka" />
+            </div>
+            <button class="btn btn-success" type="submit">💾 Uložit</button>
+            <a asp-action="Index" class="btn btn-secondary btn-back">← Zpět</a>
+        </form>
+    </div>
+</div>

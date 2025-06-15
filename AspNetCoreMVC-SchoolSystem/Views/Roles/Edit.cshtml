@@ -1,0 +1,128 @@
+﻿@model RoleState
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .header-box {
+        background: linear-gradient(90deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        background: #2a5298;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .table thead {
+        background-color: #e9f0fb;
+    }
+
+    .table th {
+        font-weight: 600;
+    }
+
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    .empty-row {
+        text-align: center;
+        font-style: italic;
+        color: #6c757d;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1.25rem;
+        font-weight: 500;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="header-box">Editovat roli</h1>
+
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+    <form method="post">
+        <input type="hidden" name="roleName" value="@Model.Role.Name" />
+        <input type="hidden" name="roleId" value="@Model.Role.Id" />
+
+        <div class="section-title">Přidat jako "@Model.Role.Name"</div>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered table-hover table-sm shadow-sm">
+                <thead>
+                    <tr>
+                        <th>Jméno uživatele</th>
+                        <th style="width: 80px;">Přidat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.NonMembers.Any())
+                    {
+                        <tr>
+                            <td colspan="2" class="empty-row">All users are already members.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (AppUser user in Model.NonMembers)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>
+                                    <input type="checkbox" name="AddIds" value="@user.Id" />
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section-title">Smazat z "@Model.Role.Name"</div>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered table-hover table-sm shadow-sm">
+                <thead>
+                    <tr>
+                        <th>Jméno uživatele</th>
+                        <th style="width: 80px;">Smazat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Members.Any())
+                    {
+                        <tr>
+                            <td colspan="2" class="empty-row">Žádní uživatelé nejsou aktuálně členy.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (AppUser user in Model.Members)
+                        {
+                            <tr>
+                                <td>@user.UserName</td>
+                                <td>
+                                    <input type="checkbox" name="DeleteIds" value="@user.Id" />
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary shadow-sm">💾 Uložit změny</button>
+            <a asp-action="Index" class="btn btn-secondary btn-back">← Zpět</a>
+        </div>
+    </form>
+</div>

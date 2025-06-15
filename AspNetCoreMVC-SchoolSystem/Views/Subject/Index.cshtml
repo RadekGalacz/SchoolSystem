@@ -1,0 +1,42 @@
+﻿@model IEnumerable<SubjectDTO>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">📚 Předměty</h2>
+        <a asp-action="Create" class="btn btn-success">➕ Přidat předmět</a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+
+                            @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher")))
+                            {
+                                <hr />
+                                <p class="card-text"><strong>ID:</strong> @item.Id</p>
+                            }
+                        </div>
+
+                        @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Teacher")))
+                        {
+                            <div class="card-footer bg-transparent border-0 d-flex justify-content-end gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Změnit</a>
+                                <a asp-action="GetToDelete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Smazat</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">Žádný předmět nebyl nalezen.</div>
+    }
+</div>

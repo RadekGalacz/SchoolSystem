@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANd8kwUrAWUisXRO1Quig9AAAAAACAAAAAAAQZgAAAAEAACAAAAA8iorW5R5xWJm4Jj5BD5wJ2iU5acLaPeqzrWxnhvbPLwAAAAAOgAAAAAIAACAAAAD6G2JgAbnjw4KCttCMafS0wDKzeptGD542AjPHq/HD1oAAAAAqSe6RtoSS/nG+hhkDSxu7dHgD/EXeI6ij5NfZFfGDUimrldddgylVjSldBGDTb3FfHzDRWpJw8sY/Ei+mvESBDYJ6VtRQlpstKhmjYoOUrZ7gWjI6IYpdb0TOwvtiUNqwJ1IIu3/O+Is8kICcNEgiiAQHOggG/iPQ3yXJ4lodxkAAAADGGY7CJU06lzIIle6Ti/dvDHxH7rYoE2WHP/VAHSybJHGGeRjkqtIwmEcIrK5sW6UEkqIlKfRlAenS6889ZWPL</EncryptedPassword>
+    <History>True|2025-06-10T20:17:27.9953908Z||;True|2025-06-10T21:16:15.9352449+02:00||;True|2025-06-10T21:11:31.6909464+02:00||;True|2025-06-10T20:59:54.5059458+02:00||;True|2025-06-10T20:36:05.5107080+02:00||;True|2025-06-10T17:45:39.0352135+02:00||;True|2025-06-10T15:42:49.6337040+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureDbConnection">
+      <Value>Server=tcp:myfreesqldbserver403.database.windows.net,1433%3bInitial Catalog=myFreeDB%3bPersist Security Info=False%3bUser ID=kraljaprvni%3bPassword=tR4V1An!%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

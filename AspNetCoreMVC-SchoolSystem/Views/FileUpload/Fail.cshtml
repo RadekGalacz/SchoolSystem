@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "File Upload Error";
+}
+
+<div class="container mt-5">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title text-danger mb-3">⚠️ Soubor nebyl vybrán</h3>
+
+            <div class="mb-4">
+                <p class="fw-bold">Nejprve musíte vybrat soubor.</p>
+                <p>Prosím, jděte zpět a vyberte .xml soubor.</p>
+            </div>
+
+            <div class="d-flex gap-3">
+                <a asp-controller="Students" asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i> Zpět
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

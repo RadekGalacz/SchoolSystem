@@ -1,0 +1,26 @@
+﻿@model GradeDTO
+
+<div class="container mt-5">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title text-danger mb-3">🗑️ Opravdu chcete smazat hodnocení?</h3>
+
+            <div class="mb-4">
+                <h5 class="fw-bold">@Model.StudentFullName</h5>
+                <p><strong>Předmět:</strong> @Model.SubjectName</p>
+                <p><strong>Téma:</strong> @Model.Topic</p>
+                <p><strong>Známka:</strong> @Model.Mark</p>
+                <p><strong>ID hodnocení:</strong> @Model.Id</p>
+            </div>
+
+            <form method="post" class="d-flex gap-3">
+                <button type="submit" class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">
+                    <i class="bi bi-trash-fill me-1"></i> Smazat
+                </button>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i> Zpět
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

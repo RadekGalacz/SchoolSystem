@@ -1,0 +1,24 @@
+﻿@model StudentDTO
+
+<div class="container mt-5">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title text-danger mb-3">🗑️ Opravdu chcete smazat studenta?</h3>
+
+            <div class="mb-4">
+                <h5 class="fw-bold">@Model.FirstName @Model.LastName</h5>
+                <p><strong>Datum narození:</strong> @Model.DateOfBirth.ToString("dd.MM.yyyy")</p>
+                <p><strong>ID studenta:</strong> @Model.Id</p>
+            </div>
+
+            <form method="post" class="d-flex gap-3">
+                <button type="submit" class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">
+                    <i class="bi bi-trash-fill me-1"></i> Smazat
+                </button>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i> Zpět
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

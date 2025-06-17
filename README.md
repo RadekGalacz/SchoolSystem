@@ -1,6 +1,6 @@
 # 🎓 Aplikace pro správu studentů a známek
 
-Tato ASP.NET MVC aplikace slouží jako školní informační systém pro správu studentů, známek, předmětů a uživatelů. Projekt vznikl v rámci kurzu pořádaného VŠB-TUO.
+Tato ASP.NET Core MVC aplikace slouží jako školní informační systém pro správu studentů, známek, předmětů a uživatelů. Projekt vznikl v rámci kurzu pořádaného VŠB-TUO.
 
 ## ✨ Hlavní funkce
 
